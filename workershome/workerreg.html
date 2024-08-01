@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type="submit"]
+{
+background: transparent;
+border: none;
+outline: none;
+color: #fff;
+background: #03a9f4;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+}
+</style>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="wreg.css">
+<title>Registration</title>
+</head>
+<body>
+<nav>
+<ul class="nav-links">
+<li><a href="home.html">Home</a></li>
+<li><a href="ses.php">Customer</a></li>
+<li><a href="worker.php">Worker</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+</nav>
+<br>
+<br>
+<div class="container">
+<center>
+<form action="registrationw.php" method="post" enctype="multipart/form-data">
+<table style="text-align:right;border=0;">
+<caption><center>
+<h2 style="color:#fff;"> REGISTER</h2></center>
+</caption>
+<tr><td><label for="cname"> Name </label></td>
+<td><input type="text" name="cname" required></td></tr>
+</br></br>
+<tr><td><label for="Gender">Gender </label>
+<br></td><td><input type="radio" name="Gender" id="Male" value="M" required><label for="Male">Male</label>
+<input type="radio" name="Gender" value="F" id="Female"><label for="Female">Female</label></br></br></td></tr>
+<tr><td><label for="age">Age</label></td><td><input type="Number" name="age" required></br></br></td></tr>
+<tr><td><label for="email">Email </label></td><td><input type="email" name="email" required></br></br></td></tr>
+<tr><td><label for="adhaar">Adhaar No</label></td><td><input type="number" minlength="16" maxlength="16" name="adhaar" required>
+</br></br></td></tr>
+<tr><td><label for="work"> WORK</label></td><td>
+<select name="work" required>
+<option value="Electrician">Electrician </option>
+<option value="plumber">Plumber </option>
+<option value="Painter">Painter </option>
+<option value="Beautician">Beautician </option>
+<option value="Mason">Mason </option>
+<option value="cleaning">Cleaning </option>
+<option value="carpenter">Carpenter </option>
+</select>
+</br></br></td></tr>
+<tr><td><label for="special">Specialised for</label></td><td><input type="text" name="special" required>
+</br></br></td></tr>
+<tr><td><label for="experience">Experience(years)</label></td><td><input type="number" name="experience" required>
+</br></br></td></tr>
+<tr><td><label for="amount">Minimum Range of Amount</label></td><td><input type="number" name="amount" required></br></br>
+</td></tr><tr><td><label for="address">Address</label></td><td><textarea rows="2" cols="15" name="address" required></textarea>
+</br></br></td></tr>
+<tr><td><label for="contact">Contact No</label></td><td><input type="Number" name="contact" required>
+</br></br></td></tr>
+<tr><td><label for="alt">Alternative No</label></td><td><input type="Number" name="alt" required>
+</br></br></td></tr>
+<tr><td><label for="username">Username</label></td><td>
+<input type="text" name="username" required>
+</br></br></td></tr>
+<tr><td><label for="password">Password</label></td><td>
+<input type="password" name="password" required>
+</br></br></td></tr>
+<tr><td><label for="conpassword">Confirm password</label></td><td>
+<input type="password" name="conpassword">
+</br></br></td></tr>
+<table>
+<input type="submit" value="submit">
+</br></br>
+</form></center>
+</div>
+</body>
+</html>
